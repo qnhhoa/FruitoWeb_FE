@@ -1,0 +1,153 @@
+.Detail{
+     width: 80%;
+     margin: 110px auto;
+    .product{
+        & .product-top{
+            display: flex;
+            font-family: "Segoe UI",Tahoma,Verdana,sans-serif;
+            font-size:0.9rem;
+            padding: 20px;
+        }
+        & .product-content{
+            display: flex;
+            & .product-content-left{
+                flex: 1;
+                width:100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                & .image-main img {
+                   width: 85%;
+                   display: block;
+                   margin: 0 auto;
+                   object-fit:cover;
+                   border-radius: 10px;
+                }
+                & .image-sub {
+                   padding:20px 0;
+                    display: flex;
+                    justify-content: center;
+                    & img{
+                        width: 130px;
+                        height: 130px;
+                        object-fit: cover;
+                        margin: 0px 5px;
+                        border: 2px solid rgba(160, 147, 147, 0.836);
+                        border-radius:10px;
+                    }
+                    
+                } 
+            }
+            & .product-content-right{
+                flex: 1;
+                width: 50%;
+                & .product-brand p{
+                    text-transform: uppercase;
+                    font-size: 1.0rem;
+                    cursor: pointer;
+                    & :hover{
+                        color:rgb(231, 71, 71); 
+                    }  
+                }
+                & .product-name{
+                    margin-top: 20px;
+                    font-size: 2.2rem;
+                    font-family: "Noto Sans",sans-serif;
+                    color: brown;
+                }
+                //Đánh giá hiển thị sao
+
+
+
+                //======================================================
+                & .product-des{
+                    margin-top: 20px;
+                    font-size: 1.0rem;
+                }
+                & .product-rest{
+                    display: flex;
+                    margin-top: 25px;
+                    & .product-price {
+                        padding: 0 10px ;
+                        h1{
+                            color:rgba(10, 9, 9, 0.788);
+                            font-size:2.4rem;
+                        }
+                        p{
+                            font-size: 0.8rem;
+                            color: brown;
+                        }
+                         
+                    }
+                    & .product-state{
+                        margin: 20px 50px;
+                        font-size: 1.3rem;
+                        color: rgb(204, 77, 3);
+                    }
+                    & .product-number{
+                        margin-left: 30px;
+                        font-size:1.3rem;
+                        & #spnumber {
+                           padding: 10px 20px;
+                           margin-top: 15px;
+                           color:brown;
+                           border: 3px solid black;
+                           border-radius: 3px;
+                           font-size:18px;
+                        }
+                    }
+                
+             
+                }
+                //Button ADD TO CART & BUY
+                & .btn-addtocart{
+                    display: flex;
+                    margin: 70px 0; 
+                    button{
+                        width: 200px;
+    
+                        padding: 10px 20px;
+                        border: 2px solid brown;
+                        margin-left: 15px;
+                        background-color: brown;
+                        font-size: 0.9rem;
+                        border-radius: 5px;
+                        color:#fff;
+                        
+                        i{
+                            font-size: 1.2rem;
+                        }
+                        span{
+                            margin-left: 15px;
+                            
+                        }    
+                    }
+                    & :hover{
+                        background-color:#fff;
+                        color: brown;  
+                    }
+                }
+                & .hr-point{
+                    text-align: center;
+                    font-size: 0.9rem;
+                }
+              
+                    & .product-hotline{
+                        margin-top: 20px;
+                        display: flex;
+                        gap: 0 10px;
+                    
+                      & a{
+                            color: rgb(138, 54, 54);
+                      }
+                       justify-content: center;
+                        
+                    }
+                    
+                
+   
+            }
+        }
+    }
+}
+ 

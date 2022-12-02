@@ -1,0 +1,136 @@
+@import "./variable.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.body_Page{
+  padding-top: var(--height-header) ;
+}
+.title_pro {
+  padding: 10px 0;
+  margin-top: 100px;
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  .App .Header{
+    align-items: center;
+  }
+  .App .Product .pro_img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .App .latest .Product .pro_img {
+    width: 100%;
+    height: 150px;
+  }
+  
+  .App .ProductSlider
+  {
+    height: 270px;
+  }
+  .App .Header .mobile{
+   display: block;
+    
+  }
+  .App .Header .Header_Nav.nav_Mobile{
+    display: block;
+  }
+  .App .Header .Header_Nav {
+    display: none;
+  }
+  .App .Product {
+    height: 340px;
+  }
+  .App .latest .Product {
+    height: 250px;
+  }
+  .App .Anh {
+    grid-template-areas:
+      "h1"
+      "h2"
+      "h3"
+      "h4";
+    grid-template-columns: 435px;
+    grid-template-rows: 250px;
+  }
+  .App .BestSeller {
+    grid-template-areas: "h1 h1";
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .App .Contact .body_Page .desc {
+    width: 100% ;
+  }
+  
+  .App .Header .mobile
+  {
+    top:70%;
+  }
+  .App .Header .Header_top {
+    display: flex;
+    margin: 0 1%;
+  }
+  .App .Header .Header_top .Header_icon {
+    width: 40%;
+    
+  }
+  .App .Header .Header_top .Header_search {
+    width: 70%;
+  }
+  
+  /* .App .Header .Header_top .Header_search {
+    width: 100%;
+  }
+  
+  .App .Header .Header_top .Header_icon
+  {
+    justify-content: center;
+    gap: 50px;
+  }
+  .App .Header .Header_top .Header_search {
+    width: 50%;
+    margin: 0 auto;
+  } */
+  .App .Product .pro_img {
+    width: 100%;
+    height: 240px;
+  }
+  .App .BestSeller {
+    grid-template-areas: "h1";
+  }
+  .App .Product .btn_plus {
+    position: relative;
+    display: block;
+    bottom: 0px;
+    left: 45%;
+  }
+
+  .App .Anh {
+    grid-template-areas:
+      "h1"
+      "h2"
+      "h3"
+      "h4";
+    grid-template-columns: 235px;
+    grid-template-rows: 250px;
+  }
+  
+
+  .App .content_slider {
+    display: block;
+  }
+  .App .Header .Header_top .Header_logo {
+    display: none;
+  }
+  .App .content_slider li:not(:first-child) {
+    border-top: 1px solid rgba(94, 91, 91, 0.281);
+  }
+}

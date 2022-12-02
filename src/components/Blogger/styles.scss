@@ -1,0 +1,203 @@
+
+@import url('https://fonts.googleapis.com/css?family=Sofia');
+.intro{
+  margin: 120px 200px;
+  & img{
+    margin-left: 100px;
+    margin-bottom: 50px;
+    width: 40%;
+  }
+
+  & .intro-text{
+    display:flex;
+    margin-bottom: 60px;
+    
+    & .intro-content{
+      flex-direction: column;
+      & h1{
+        font-size:40px;
+        margin: 20px 0px ;
+      }
+      & .intro-p1{
+        font-size:40px;
+      }
+      & .intro-p2{
+        margin: 20px 0px;
+        font-size: 20px;
+        color: palevioletred;
+      }
+    }
+    & .img-intro{
+      width: 60%;
+    }
+  
+  }
+}
+//Phần css của video
+.video{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.video_layout{
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.video-item{
+    margin: 15px 15px;
+    height: 230px;
+    border-radius: 10px;
+    position: relative;
+}
+.video img{
+    box-shadow: 5px 5px 5px rgba(105, 103, 99, 0.836);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.col{
+    width: calc(33.33% - 60px);
+}
+.overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: rgba(209, 209, 209, 0.521);
+  opacity: 0;
+}
+.overlay i{
+  font-size: 60px;
+    width: fit-content;
+    margin: 0 auto;
+    color: #ffffffd7;
+
+}
+
+.video-item:hover .overlay{
+  opacity: 1;
+
+}
+// Phần css của author
+.author{
+  margin: 0px 200px;
+  display: flex;
+  color:rgb(226, 102, 143);  
+  & img{
+    width:40%;
+  }
+
+  & .author-content{
+    margin-left: 40px;
+    & .content-name{
+      font-family: "Sofia", sans-serif;
+      color: rgb(44, 42, 42);
+      font-size: 50px;
+    }
+    & .content-text{
+      background-color:rgb(246,229,238)!important;
+      padding: 60px;
+      font-size: 20px;
+    }
+    
+  }
+  
+}
+
+/* Phần css của các bài viết */
+.post {
+  margin-top:20px;
+}
+.item {
+    width: 80%;
+    margin: 30px  auto ;
+    display: flex;
+    padding: 40px ;
+    
+  }
+  .des_date{
+      opacity: 0.6;
+  }
+ 
+  .item__description div + div {
+    margin-top: 5px;
+  }
+  .item__description {
+    flex: 2;
+    margin-top: 10px;
+    padding : 0 200px 0 25px  ;
+  }
+  .item__img img {
+    width: 350px;
+    height: 250px;
+    padding: 10px;
+    box-shadow: 5px 5px 20px rgb(219, 216, 212);
+    border-radius: 30px;
+  }
+  .des_btn {
+ 
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #558dd6;
+    transition: opacity linear 0.1s;
+    opacity: 0.8;
+    & a {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+    }
+    &:hover{
+      opacity: 1;
+      transition: opacity linear 0.1s;
+    }
+  }
+
+  .btn-next {
+    width: 70%;
+    background-color: #558dd6;
+    opacity: 0.7;
+    color: white;
+    padding: 14px 20px;
+    margin:  50px 200px ;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity linear 0.1s;
+    font-size: 20px;
+  }
+  
+  .btn-next:hover {
+    opacity: 1;
+    transition: opacity linear 0.1s;
+  }
+
+  //responsive
+  //ipad
+  @media screen and (max-width: 768px) {
+    .intro{
+      margin: 120px 150px;
+    }
+    .video{
+      width: 80%;
+      margin: 0 auto;
+    }
+    .video-item{
+      margin: 15px 15px;
+      height: 180px;
+      border-radius: 10px;
+      position: relative;
+  }
+  }
+
+  //mobile
+  @media screen and (max-width: 414px) {}

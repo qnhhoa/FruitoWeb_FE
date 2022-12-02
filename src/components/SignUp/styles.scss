@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pragati+Narrow&family=Sacramento&display=swap');
+@import "../../variable.css";
+
+.Signup {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-global);
+    .login-form {
+        box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.25);
+        display: flex; 
+        width: 745px;
+        height: 538px;
+        .login-left {
+            width: 395px;
+            height: 100%;
+            background-color: rgb(245, 155, 124);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 8%;
+            .content {
+                h3 {
+                    color: #fff;
+                    font-family: 'Pragati Narrow', sans-serif;
+                    font-size: 36px;
+                    margin-bottom: 15px;
+                    font-weight: 400 !important;
+                }
+                p.welcome {
+                    font-size: 26px;
+                    margin-bottom: 15px;
+                    font-family: 'Sacramento', cursive;
+                }
+                p.text-introduce {
+                    font-size: 11px;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    color: #fff;
+                    margin-bottom: 15px;
+                }
+                .icon {
+                    i.fab {
+                        font-size: 24px;
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+        .login-right {
+            width: 350px;
+            height: 100%;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 8%;
+            .content {
+                text-align: center;
+                p.hellothere {
+                    font-family: 'Sacramento', cursive;
+                    font-size: 36px;
+                    margin-bottom: 15px;
+                }
+                p {
+                    font-size: 14px;
+                    margin-bottom: 15px;
+                }
+                form {
+                    
+                    .form-group {
+                        margin-bottom: 15px;
+                        input {
+                            padding-left: 10px;
+                            width: 265px;
+                            height: 35px;
+                            outline: none;
+                            border: none;
+                            border-radius: 5px;
+                            box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.14);
+                            // cursor: pointer;
+                            &::-webkit-input-placeholder {
+                                color: rgba(51, 51, 51, 0.6);
+                            }
+                        }
+                    }
+
+                    .wthree-text {
+                        font-size: 12px;
+                        text-align: start;
+                        label {
+                            display: flex;
+                            span {
+                                color: rgb(222, 120, 86);
+                            }
+                            input {
+                                margin-right: 8px;
+                                background-color: rgb(222, 120, 86);
+                            }
+                        }
+                    }
+                    
+                    button.form-submit { //create account
+                        width: 265px;
+                        height: 35px;
+                        color: #fff;
+                        background-color: rgb(222, 120, 86);
+                        margin-bottom: 10px;
+                        &:hover {
+                            background-color: rgb(245, 155, 124);
+                            transition: all 0.3s;
+                        }
+                    }
+                    p.loginnow{
+                        margin-bottom: 15px;
+                        font-size: 12px;
+                        .login-now {
+                            color: rgb(245, 155, 124);
+                            text-decoration: none;
+                            font-size: 14px;
+                            &:hover {
+                                text-decoration: underline;
+                                color: rgb(222, 120, 86);
+                                transition: all 0.3s;
+                            }
+                        }
+                    }
+                    .btn {
+                        width: 130px;
+                        height: 35px;
+                        font-size: 14px;
+                        font-family: 'Pragati Narrow', sans-serif;
+                        margin-top: 10px;
+                        color: #fff;
+                        background-color: rgb(222, 120, 86);
+                        outline: none;
+                        border: none;
+                        border-radius: 30px;
+                    }
+
+                    // .signin-fb-gg {
+                    //     display: flex;
+                    //     justify-content: space-between;
+                    //     .btn-fb, .btn-gg {
+                    //         background-color: #fff;
+                    //         border:1px solid rgb(222, 120, 86);
+                    //         color: #333;
+                    //         font-size: 11px;
+                    //     }
+                    // }
+
+                }
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Signup {
+        .login-form {
+            width: 521px;
+            height: 377px;
+            .login-left {
+                width: 277px;
+                .content {
+                    h3 {
+                        font-size: 25px;
+                        margin-bottom: 10px;
+                    }
+                    p.welcome {
+                        font-size: 18px;
+                        margin-bottom: 10px;
+                    }
+                    p.text-introduce {
+                        font-size: 7px;
+                        margin-bottom: 10px;
+                    }
+                    .icon {
+                        i.fab {
+                            font-size: 18px;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+            .login-right {
+                width: 245px;
+                .content {
+                    p.hellothere {
+                        font-size: 24px;
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        font-size: 10px;
+                        margin-bottom: 10px;
+                    }
+                    form {
+                        .form-group {
+                            margin-bottom: 10px;
+                            input {
+                                padding-left: 7px;
+                                width: 185px;
+                                height: 25px;
+                                font-size: 11px;
+                            }
+                        }
+                        .wthree-text {
+                            font-size: 7px;
+                            input {
+                                margin-right: 4px;
+                            }
+                            label {
+                                font-size: 8px;
+                            }
+                        }
+                        p.forgot-password {
+                            font-size: 8px;
+                        }
+                        button.form-submit {
+                            width: 185px;
+                            height: 25px;
+                        }
+                        p.loginnow{
+                            margin-bottom: 15px;
+                            font-size: 10px;
+                            .login-now {  
+                                font-size: 10px;
+                            }
+                        }
+                        .btn {
+                            width: 91px;
+                            height: 24px;
+                            font-size: 12px;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .Signup {
+        .login-form {
+            width: 350px;
+            height: 320px;
+            .login-left {
+                width: 175px;
+                .content {
+                    h3 {
+                        font-size: 14px;
+                        margin-bottom: 5px;
+                    }
+                    p.welcome {
+                        font-size: 9px;
+                        margin-bottom: 5px;
+                    }
+                    p.text-introduce {
+                        font-size: 5px;
+                        margin-bottom: 5px;
+                    }
+                    .icon {
+                        i.fab {
+                            font-size: 9px;
+                            margin-right: 3px;
+                        }
+                    }
+                }
+            }
+            .login-right {
+                width: 175px;
+                .content {
+                    p.hellothere {
+                        font-size: 14px;
+                        margin-bottom: 5px;
+                    }
+                    p {
+                        font-size: 6px;
+                        margin-bottom: 5px;
+                    }
+                    form {
+                        .form-group {
+                            margin-bottom: 5px;
+                            input {
+                                padding-left: 4px;
+                                width: 150px;
+                                height: 18px;
+                                font-size: 9px;
+                            }
+                        }
+                        .wthree-text {
+                            margin-top: 10px;
+                            input {
+                                margin-right: 2px;
+    
+                            }
+                            label {
+                                font-size: 7px;
+                            }
+                        }
+                        
+                        button.form-submit {
+                            width: 95px;
+                            height: 13px;
+                        }
+                        p.loginnow{
+                            margin-bottom: 15px;
+                            font-size: 9px;
+                            .login-now {  
+                                font-size: 9px;
+                            }
+                        }
+                        .btn {
+                            width: 50px;
+                            height: 13px;
+                            font-size: 7px;
+                        }
+                        //k chinh dc icon fb gg
+                        // .signin-fb-gg {
+                        //     display: none;
+                        //     .btn-fb, .btn-gg {
+                                
+                        //     }
+                        // }
+                    }
+                }
+            }
+        }
+    }
+}

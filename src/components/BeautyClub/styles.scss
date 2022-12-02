@@ -1,0 +1,180 @@
+
+.BeautyClub {
+  // width: 100%;
+  margin: 0 8%;
+  .items {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .item {
+      width: 33.33%;
+      margin: 0px;
+      text-align: start;
+      display: block;
+      height: 300px;
+      .img {
+        img {
+          width: 100%;
+          border-radius:10px;
+        }
+      }
+      
+      .content {
+       margin-top: 20px;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        & .title{
+
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-weight: 600;
+          min-height: 70px;
+        }
+        & .date{
+          font-size:17px;
+        }& .continue{
+          font-size:14px;
+          color:rgb(129, 59, 12);
+        }
+
+        & a{
+          text-decoration: none;
+          color: rgb(121, 121, 121);
+          &:hover{
+            color: rgb(0, 0, 0);
+            
+          }
+        }
+
+      }
+    }
+  }
+
+  .view-more {
+    text-align: center;
+    margin-top: 130px;
+    list-style: none;
+    
+  }
+  
+}
+
+// @media screen and (max-width: 768px) {
+//   .BeautyClub {
+//     .items {
+      
+//       .item {
+//         height: 300px;
+        
+        
+        
+//         .content {
+//           color: #333;
+//           background-color: red;
+//          margin-top:10px;
+//         }
+//       }
+//     }
+  
+    
+    
+//   }
+  
+  @media screen and (max-width: 768px) {
+    .BeautyClub {
+      
+      .items {
+        margin: 0 10%;
+        display: block;
+        .item {
+          text-align: center;
+          width: 80%;
+          height: 270px;
+          display: block;
+          margin-bottom: 150px;
+          .img {
+            img {
+  
+              border-radius: 20px;
+            }
+          }
+          .content {
+            margin-top: 10px;
+            
+            a {
+              color: #333;
+              font-size: 14px;
+            }
+            span.date {
+              color: #333;
+              font-size: 12px;
+              margin: 10px 0;
+             }
+             a.continue {
+              color: #333;
+              font-size: 14px;
+             }
+          }
+        }
+      }
+      .view-more {
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+
+
+@media screen and (max-width: 414px) {
+  .BeautyClub {
+      
+    .items {
+      margin: 0 auto;
+      display: block;
+      .item {
+        
+        text-align: center;
+        width: 100%;
+        height: 270px;
+        display: block;
+        margin-bottom: 30px;
+        .img {
+          img {
+
+            border-radius: 20px;
+          }
+        }
+        .content {
+          margin-top: 10px;
+          
+          a {
+            color: #333;
+            font-size: 14px;
+          }
+          span.date {
+            color: #333;
+            font-size: 12px;
+            margin: 10px 0;
+           }
+           a.continue {
+            color: #333;
+            font-size: 14px;
+           }
+        }
+      }
+    }
+    .view-more {
+      margin: 70px;
+      a {
+        font-size: 12px;
+      }
+    }
+  }
+}
