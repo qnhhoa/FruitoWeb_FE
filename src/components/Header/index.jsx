@@ -68,7 +68,7 @@ function Header() {
       <div className="Header_top">
         <img
           src="https://imagizer.imageshack.com/v2/734x320q90/r/924/InIkGN.png"
-          alt="" width="100" height="200"
+          alt="" width="100" height="80"
           className="Header_logo"
         />
         <div className="Header_search">

@@ -105,8 +105,8 @@
     // margin-bottom: 20px;
     justify-content: space-between;
     & .Header_logo {
-      width: 100px;
-      height: 80px;
+      width: 120px;
+      height: 50px;
       margin: auto 0;
     }
     & .Header_search {
@@ -421,7 +421,7 @@
   .Header {
     .Header_top {
       .Header_logo {
-        width: 100px;
+        width: 80px;
         height: 20px;
       }
       .Header_search {

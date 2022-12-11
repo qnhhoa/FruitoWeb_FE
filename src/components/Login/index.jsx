@@ -77,7 +77,7 @@ function Login() {
         <div className="login-left">
           <div className="content">
             <h3>Logo</h3>
-            <p className="welcome">Welcome to Envy</p>
+            <p className="welcome">Welcome to Fruito</p>
             <p className="text-introduce">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac
               nisl tristique, lacinia ipsum tempor, gravida nibh. Mauris odio
